@@ -1,0 +1,24 @@
+make[1]: Entering directory '/home/bernhard/code/cvs/onelinerbenchmark'
+cc -O1    benchmark.c   -o benchmark
+cc -O1    empty.c   -o empty
+make[1]: Leaving directory '/home/bernhard/code/cvs/onelinerbenchmark'
+benchmark of "bash -c ''" :
+took: 6463293 clock cycles, 2315 us
+benchmark of "./empty" :
+took: 4187367 clock cycles, 1499 us
+benchmark of "busybox-static echo -n ''" :
+took: 3907704 clock cycles, 1399 us
+benchmark of "busybox-static sh -c ''" :
+took: 3870753 clock cycles, 1386 us
+benchmark of "perl -e ''" :
+took: 6700374 clock cycles, 2399 us
+benchmark of "ruby --disable-gems -e ''" :
+took: 29564061 clock cycles, 10586 us
+benchmark of "ruby -e ''" :
+took: 192337380 clock cycles, 68864 us
+benchmark of "python -S -c ''" :
+took: 13597392 clock cycles, 4868 us
+benchmark of "python -c ''" :
+took: 33948363 clock cycles, 12155 us
+benchmark of "php -r ''" :
+took: 35620584 clock cycles, 12754 us
