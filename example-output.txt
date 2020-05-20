@@ -16,6 +16,8 @@ benchmark of "python -S -c ''" :
 took: 13597392 clock cycles, 4868 us
 benchmark of "python -c ''" :
 took: 33948363 clock cycles, 12155 us
+benchmark of "python3 -S -c ''" :
+took: 32601306 clock cycles, 11672 us
 benchmark of "php -r ''" :
 took: 35620584 clock cycles, 12754 us
 benchmark of "node -e ''" :
