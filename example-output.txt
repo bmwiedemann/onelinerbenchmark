@@ -2,6 +2,8 @@ benchmark of "bash -c ''" :
 took: 6463293 clock cycles, 2315 us
 benchmark of "./empty" :
 took: 4187367 clock cycles, 1499 us
+benchmark of "./empty-static" :
+took: 3776169 clock cycles, 1352 us
 benchmark of "busybox-static echo -n ''" :
 took: 3907704 clock cycles, 1399 us
 benchmark of "busybox-static sh -c ''" :

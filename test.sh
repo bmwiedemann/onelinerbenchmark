@@ -3,6 +3,7 @@ benchmark=./benchmark
 perl -e 'for(1..1000000){}' #warmup CPU
 $benchmark "bash -c ''"
 $benchmark "./empty"
+$benchmark "./empty-static"
 $benchmark "busybox-static echo -n ''"
 $benchmark "busybox-static sh -c ''"
 $benchmark "perl -e ''"
