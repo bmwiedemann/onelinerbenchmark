@@ -1,6 +1,5 @@
 #!/bin/sh
 benchmark=./benchmark
-make
 perl -e 'for(1..1000000){}' #warmup CPU
 $benchmark "bash -c ''"
 $benchmark "./empty"
