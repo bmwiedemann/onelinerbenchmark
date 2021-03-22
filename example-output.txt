@@ -4,6 +4,10 @@ benchmark of "./empty" :
 took: 4187367 clock cycles, 1499 us
 benchmark of "./empty-static" :
 took: 3776169 clock cycles, 1352 us
+benchmark of "./empty-static-uclibc" :
+took: 3377136 clock cycles, 1209 us
+benchmark of "./emptyrs" :
+took: 4758906 clock cycles, 1704 us
 benchmark of "busybox-static echo -n ''" :
 took: 3907704 clock cycles, 1399 us
 benchmark of "busybox-static sh -c ''" :
