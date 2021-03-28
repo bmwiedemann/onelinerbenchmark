@@ -1,5 +1,5 @@
 CFLAGS=-O1
-BINARIES = benchmark empty empty-static empty-static-uclibc emptyrs
+BINARIES = benchmark empty empty-static empty-static-uclibc emptyrs emptygo
 all: $(BINARIES)
 
 %-static: %.c
@@ -12,6 +12,10 @@ all: $(BINARIES)
 
 %: %.rs
 	rustc $<
+	strip $@
+
+%: %.go
+	go build $<
 	strip $@
 
 example-output.txt: benchmark empty

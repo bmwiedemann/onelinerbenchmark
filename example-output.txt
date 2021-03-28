@@ -8,6 +8,8 @@ benchmark of "./empty-static-uclibc" :
 took: 3377136 clock cycles, 1209 us
 benchmark of "./emptyrs" :
 took: 4758906 clock cycles, 1704 us
+benchmark of "./emptygo" :
+took: 6349068 clock cycles, 2273 us
 benchmark of "busybox-static echo -n ''" :
 took: 3907704 clock cycles, 1399 us
 benchmark of "busybox-static sh -c ''" :
