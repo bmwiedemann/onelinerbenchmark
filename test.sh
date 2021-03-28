@@ -4,6 +4,7 @@ perl -e 'for(1..1000000){}' #warmup CPU
 $benchmark "./non-existent-program"
 $benchmark "bash -c ''"
 $benchmark "./empty"
+$benchmark "./emptyssl"
 $benchmark "./empty-static"
 $benchmark "./empty-static-uclibc"
 $benchmark "./emptyrs"
