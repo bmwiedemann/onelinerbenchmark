@@ -1,3 +1,5 @@
+benchmark of "./non-existent-program" :
+took: 3450963 clock cycles, 1235 us
 benchmark of "bash -c ''" :
 took: 6463293 clock cycles, 2315 us
 benchmark of "./empty" :
