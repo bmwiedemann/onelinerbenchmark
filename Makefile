@@ -22,7 +22,7 @@ emptyssl: empty.c
 	go build $<
 	strip $@
 
-example-output.txt: benchmark empty
+example-output.txt: $(BINARIES)
 	taskset 1 ./test.sh | tee $@
 
 clean:
