@@ -1,0 +1,38 @@
+benchmark of "./non-existent-program" :
+took: 21851094 clock cycles, 7824 us
+benchmark of "bash -c ''" :
+took: 21569994 clock cycles, 7723 us
+benchmark of "./empty" :
+took: 18659085 clock cycles, 6681 us
+benchmark of "./emptyssl" :
+took: 61851915 clock cycles, 22145 us
+benchmark of "./emptycurl" :
+took: 132006642 clock cycles, 47263 us
+benchmark of "./empty-static" :
+took: 136385364 clock cycles, 48831 us
+benchmark of "./empty-static-uclibc" :
+took: 38213472 clock cycles, 13682 us
+benchmark of "./emptyrs" :
+took: 79547367 clock cycles, 28481 us
+benchmark of "./emptygo" :
+took: 229172808 clock cycles, 82052 us
+benchmark of "busybox-static echo -n ''" :
+took: 46558518 clock cycles, 16669 us
+benchmark of "busybox-static sh -c ''" :
+took: 46868205 clock cycles, 16781 us
+benchmark of "perl -e ''" :
+took: 57678705 clock cycles, 20652 us
+benchmark of "ruby --disable-gems -e ''" :
+took: 88564680 clock cycles, 31710 us
+benchmark of "ruby -e ''" :
+took: 303217164 clock cycles, 108562 us
+benchmark of "python -S -c ''" :
+took: 70112130 clock cycles, 25103 us
+benchmark of "python -c ''" :
+took: 124329942 clock cycles, 44514 us
+benchmark of "python3 -S -c ''" :
+took: 97940997 clock cycles, 35067 us
+benchmark of "php -r ''" :
+took: 406599033 clock cycles, 145577 us
+benchmark of "node -e ''" :
+took: 533083365 clock cycles, 190863 us

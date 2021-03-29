@@ -28,6 +28,13 @@ int main(int argc, char **argv)
   else
     i=1;
   printf("benchmark of \"%s\" :\n", argv[1]);
+  if(getenv("DROPCACHES")) {
+    FILE *fd = fopen("/proc/sys/vm/drop_caches", "w");
+    if(fd != NULL) {
+      fprintf(fd, "1");
+      fclose(fd);
+    }
+  }
   gettimeofday(&tv1, NULL);
   start = rdtsc();
   for(; i>0; --i) {
