@@ -1,9 +1,13 @@
 CFLAGS=-O1
-BINARIES = benchmark benchmarkfork empty emptyssl empty-static empty-static-uclibc emptyrs emptygo
+BINARIES = benchmark benchmarkfork empty emptyssl emptycurl empty-static empty-static-uclibc emptyrs emptygo
 all: $(BINARIES)
 
 emptyssl: empty.c
 	$(CC) $(CFLAGS) -lssl $< -o $@
+	strip $@
+
+emptycurl: empty.c
+	$(CC) $(CFLAGS) -lssl -lcurl $< -o $@
 	strip $@
 
 %-static: %.c
