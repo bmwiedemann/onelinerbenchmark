@@ -36,7 +36,7 @@ example-output.txt: $(BINARIES)
 	taskset 1 ./test.sh | tee $@
 
 example-output-nocache.txt: $(BINARIES)
-        DROPCACHES=1 taskset 1 ./test.sh | tee $@
+	DROPCACHES=1 taskset 1 ./test.sh | tee $@
 
 clean:
 	rm -f $(BINARIES)
