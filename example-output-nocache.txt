@@ -1,38 +1,44 @@
 benchmark of "./non-existent-program" :
-took: 21851094 clock cycles, 7824 us
+took: 18888714 clock cycles, 6763 us
 benchmark of "bash -c ''" :
-took: 21569994 clock cycles, 7723 us
+took: 21248694 clock cycles, 7608 us
 benchmark of "./empty" :
-took: 18659085 clock cycles, 6681 us
+took: 19517754 clock cycles, 6988 us
 benchmark of "./emptyssl" :
-took: 61851915 clock cycles, 22145 us
+took: 48216930 clock cycles, 17264 us
 benchmark of "./emptycurl" :
-took: 132006642 clock cycles, 47263 us
+took: 81045387 clock cycles, 29017 us
 benchmark of "./empty-static" :
-took: 136385364 clock cycles, 48831 us
+took: 197728992 clock cycles, 70794 us
 benchmark of "./empty-static-uclibc" :
-took: 38213472 clock cycles, 13682 us
+took: 45820800 clock cycles, 16406 us
 benchmark of "./emptyrs" :
-took: 79547367 clock cycles, 28481 us
+took: 80602935 clock cycles, 28859 us
 benchmark of "./emptygo" :
-took: 229172808 clock cycles, 82052 us
+took: 91675821 clock cycles, 32824 us
 benchmark of "busybox-static echo -n ''" :
-took: 46558518 clock cycles, 16669 us
+took: 47734536 clock cycles, 17091 us
 benchmark of "busybox-static sh -c ''" :
-took: 46868205 clock cycles, 16781 us
+took: 48679296 clock cycles, 17429 us
 benchmark of "perl -e ''" :
-took: 57678705 clock cycles, 20652 us
+took: 51981681 clock cycles, 18611 us
 benchmark of "ruby --disable-gems -e ''" :
-took: 88564680 clock cycles, 31710 us
+took: 85498656 clock cycles, 30612 us
 benchmark of "ruby -e ''" :
-took: 303217164 clock cycles, 108562 us
+took: 283032474 clock cycles, 101336 us
 benchmark of "python -S -c ''" :
-took: 70112130 clock cycles, 25103 us
+took: 62669733 clock cycles, 22438 us
 benchmark of "python -c ''" :
-took: 124329942 clock cycles, 44514 us
+took: 104406468 clock cycles, 37382 us
 benchmark of "python3 -S -c ''" :
-took: 97940997 clock cycles, 35067 us
+took: 81289611 clock cycles, 29105 us
+benchmark of "python3 -c ''" :
+took: 178670469 clock cycles, 63971 us
 benchmark of "php -r ''" :
-took: 406599033 clock cycles, 145577 us
+took: 266819982 clock cycles, 95531 us
 benchmark of "node -e ''" :
-took: 533083365 clock cycles, 190863 us
+took: 623811942 clock cycles, 223347 us
+benchmark of "mono emptymono.exe" :
+took: 204011541 clock cycles, 73044 us
+benchmark of "java emptyjava" :
+took: 524807451 clock cycles, 187899 us
