@@ -1,5 +1,5 @@
 CFLAGS=-O1
-BINARIES = benchmark benchmarkfork empty emptyssl emptycurl empty-static empty-static-uclibc emptyrs emptygo emptymono.exe
+BINARIES = benchmark benchmarkfork empty emptyssl emptycurl empty-static empty-static-uclibc emptyrs emptygo emptymono.exe emptyjava.class
 all: $(BINARIES)
 
 emptyssl: empty.c
@@ -12,6 +12,9 @@ emptycurl: empty.c
 
 %.exe: %.cs
 	csc $<
+
+%.class: %.java
+	javac $<
 
 %-static: %.c
 	$(CC) $(CFLAGS) -static $< -o $@
